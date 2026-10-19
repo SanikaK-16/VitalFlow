@@ -22,7 +22,7 @@ VitalFlow is a real-time, multi-hospital emergency operations platform that brid
 ## 2. Core Algorithmic Architecture
 
 ### 2.1 Hybrid Multimodal Triage Formula
-$$\text{Priority Score} = 0.70 \times \text{ML\_Score} + 0.30 \times \text{Scaled}(\text{NEWS2})$$
+$$\text{Priority Score} = 0.70 \times \text{ML Score} + 0.30 \times \text{Scaled}(\text{NEWS2})$$
 - **Deterministic Clinical Safety Rule:** If $\text{NEWS2} \ge 7$, priority score is floored at $\ge 88.0$ (guaranteed **P1** Resuscitation level).
 - **Fallback Chain:** If the ML model encounters an anomaly or missing features, the system seamlessly falls back to pure clinical NEWS2 deterministic scoring.
 - **Triage Levels:**
